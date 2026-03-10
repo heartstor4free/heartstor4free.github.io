@@ -1,209 +1,493 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Hyperspace by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="HeartStor ChMS is an all-in-one Church Management System designed to help churches organize members, manage finances, plan events, track attendance, and communicate effectively — completely free of charge.">
+    <title>HeartStor ChMS | Complete Church Management. Simplified.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" aria-label="HeartStor ChMS Home"><img src="heartStor.png" alt="HeartStor ChMS Logo"
+                    class="logo-img"></a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation" aria-expanded="false"
+                aria-controls="nav-links">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <nav id="nav-links" class="nav-links">
+                <a href="#why-heartstor">Why Us</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#support">Support</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#download" class="btn btn-primary btn-sm">Download</a>
+            </nav>
+        </div>
+    </header>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Hyperspace</h1>
-							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+    <main>
+        <section id="hero" class="hero section reveal">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">HeartStor ChMS</h1>
+                    <p class="hero-subtitle">Complete Church Management. Simplified.</p>
+                    <p class="hero-description">HeartStor ChMS is an all-in-one Church Management System designed to
+                        help churches organize members, manage finances, plan events, track attendance, and communicate
+                        effectively — completely free of charge. No subscriptions, no hidden fees.</p>
+                    <div class="hero-actions">
+                        <a href="#download" class="btn btn-primary">Download Now</a>
+                        <a href="#features" class="btn btn-secondary">View Features</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-slideshow">
+                        <div class="hero-slide active">
+                            <img src="hs1.png" alt="HeartStor 1">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="hs2.png" alt="HeartStor 2">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="hs3.png" alt="HeartStor 3">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="hs4.png" alt="HeartStor 4">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="hs5.png" alt="HeartStor 5">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="hs6.png" alt="HeartStor 6">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="hs7.png" alt="HeartStor 7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+        <section id="why-heartstor" class="why-heartstor section bg-light reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why HeartStor?</h2>
+                    <p>HeartStor ChMS empowers church leaders and administrators with the tools they need to operate efficiently, 			communicate effectively and steward resources responsibly.	Spend less time managing systems — and more time serving people.</p>
+                </div>
+                <div class="why-grid">
+                    <ul class="check-list">
+                        <li>
+                            <svg class="icon-check" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Membership Management
+                        </li>
+                        <li>
+                            <svg class="icon-check" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Contributions & Finance
+                        </li>
+                        <li>
+                            <svg class="icon-check" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Events & Attendance
+                        </li>
+                    </ul>
+                    <ul class="check-list">
+                        <li>
+                            <svg class="icon-check" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Communications
+                        </li>
+                        <li>
+                            <svg class="icon-check" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Assets & Inventory
+                        </li>
+                        <li>
+                            <svg class="icon-check" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Administration & Reporting
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+        <section id="features" class="features section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Features</h2>
+                    <p>Everything you need to manage your church effectively.</p>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Membership Management</h3>
+                        <p>Keep your congregation connected and organized with comprehensive member profiles.</p>
+                        <ul>
+							<li>Households & Individual Profiles</li>
+							<li>Unlimited Groups</li>
+							<li>Life milestones tracking</li>
+							<li>Quick household entry wizard</li>
+							<li>Powerful filtering and reporting</li>
+							<li>Bulk data import/export</li>
+                        </ul>
+                    </article>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <h3>Finance & Contributions</h3>
+                        <p>HeartStor ChMS uses a simple transaction-based approach to track income and expenses.</p>
+                        <ul>
+							<li>Chart of Accounts</li>
+							<li>Income & Expense Tracking</li>
+							<li>Budget Management</li>
+							<li>Budget vs Actual Reporting</li>
+							<li>Contribution Batching & Posting</li>
+							<li>Contribution Acknowledgements</li>
+							<li>Fund Allocation & Split Giving</li>
+							<li>Multi-year historical contribution records</li>
+                        </ul>
+                    </article>
 
-			</div>
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <h3>Events & Attendance</h3>
+                        <p>Plan and execute church activities with confidence.</p>
+                        <ul>
+							<li>Events Calendar</li>
+							<li>Volunteer Rostering</li>
+							<li>Service Runsheets</li>
+							<li>Attendance Recording</li>
+							<li>Event-based reporting</li>
+                        </ul>
+                    </article>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3>Communications</h3>
+                        <p>Maintain a complete history of outreach, follow-ups and correspondence with memebers.</p>
+                        <ul>
+                           <li>Record all member interactions</li>
+							<li>Send emails to Individuals, Households, or Contacts</li>
+							<li>Use customizable Email Templates</li>
+							<li>Insert personalized Merge Fields</li>
+							<li>Track emails through the Email Queue</li>
+							<li>Print standardized forms for offline capture</li>
+                        </ul>
+                    </article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M20 16.28a2 2 0 0 1-1.12.89l-6 2.34a2 2 0 0 1-1.76 0l-6-2.34A2 2 0 0 1 4 16.28V7.72a2 2 0 0 1 1.12-.89l6-2.34a2 2 0 0 1 1.76 0l6 2.34H20a2 2 0 0 1 2 2v6.56z">
+                                </path>
+                                <polyline points="12 22 12 11"></polyline>
+                                <polyline points="12 11 20 7"></polyline>
+                                <polyline points="4 7 12 11"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Assets & Inventory</h3>
+                        <p>Keep track of all church property, equipment, and resources in one place.</p>
+                        <ul>
+							<li>Asset Records & Lifecycle Tracking</li>
+							<li>Check-Out and Check-In Management</li>
+							<li>Maintenance & Disposal Records</li>
+							<li>Inventory Transactions</li>
+							<li>Asset & Inventory Reporting</li>
+                        </ul>
+                    </article>
 
-	</body>
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Administration</h3>
+                        <p>Powerful reporting and administrative tools to keep your church running smoothly.</p>
+                        <ul>
+							<li>User Management & Security Controls</li>
+							<li>Church Settings & Configuration</li>
+							<li>Lookup Lists for data consistency</li>
+							<li>Multi-Database Support</li>
+							<li>Filters & Saved Views</li>
+							<li>Dashboards for quick system insights</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing section bg-primary reveal">
+            <div class="container pricing-container">
+                <div class="pricing-content text-center">
+                    <h2>Completely Free — For Everyone</h2>
+                    <p class="pricing-lead">Built to support churches without financial burden.</p>
+                    <div class="pricing-features">
+                        <div class="price-badge">
+                            <span class="currency">$</span><span class="amount">0</span><span
+                                class="period">/forever</span>
+                        </div>
+                        <ul class="check-list dark-bg">
+                            <li>
+                                <svg class="icon-check" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                No subscriptions
+                            </li>
+                            <li>
+                                <svg class="icon-check" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                No feature tiers
+                            </li>
+                            <li>
+                                <svg class="icon-check" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                No licensing fees
+                            </li>
+                            <li>
+                                <svg class="icon-check" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Full access to all features
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download section bg-light reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Download HeartStor ChMS</h2>
+                    <p class="version">Current Version: <strong id="current-version">Loading...</strong></p>
+                    <p>Choose the version that matches your system architecture.</p>
+                </div>
+                <div class="download-grid">
+                    <div class="download-card recommended">
+                        <div class="badge">Recommended</div>
+                        <div class="download-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </div>
+                        <h3>64-bit Version</h3>
+                        <p>For most modern Windows computers (Windows 10/11).</p>
+                        <a href="HS64_Setup.exe" class="btn btn-primary btn-block">Download 64-bit</a>
+                        <p class="file-info">HS64_Setup.exe</p>
+                    </div>
+
+                    <div class="download-card">
+                        <div class="download-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </div>
+                        <h3>32-bit Version</h3>
+                        <p>For older Windows computers with 32-bit processors.</p>
+                        <a href="HS32_Setup.exe" class="btn btn-secondary btn-block">Download 32-bit</a>
+                        <p class="file-info">HS32_Setup.exe</p>
+                    </div>
+                </div>
+                <div class="system-requirements text-center">
+                    <p>Not sure which one to choose? Open <strong>Settings &gt; System &gt; About</strong> to check your
+                        system type.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="support" class="support section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Support Resources</h2>
+                    <p>Everything you need to succeed with HeartStor ChMS.</p>
+                </div>
+                <div class="support-grid">
+                    <a href="HS_Doc.pdf" class="support-card" target="_blank" rel="noopener noreferrer">
+                        <div class="support-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
+                        </div>
+                        <h3>Documentation</h3>
+                        <p>Comprehensive guide explaining every feature.</p>
+                    </a>
+                    <a href="HS_Install.pdf" class="support-card" target="_blank" rel="noopener noreferrer">
+                        <div class="support-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <h3>Getting Started</h3>
+                        <p>Step-by-step guides for a quick and easy setup.</p>
+                    </a>
+                    <a href="HS_SysReq.pdf" class="support-card" target="_blank" rel="noopener noreferrer">
+                        <div class="support-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3>System Requirements</h3>
+                        <p>Technical specifications and compatibility information.</p>
+                    </a>
+                    <a href="HS_Update.pdf" class="support-card" target="_blank" rel="noopener noreferrer">
+                        <div class="support-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </div>
+                        <h3>Updating HeartStor</h3>
+                        <p>Learn how to update your HeartStor to the latest version.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section bg-light reveal">
+            <div class="container about-container">
+                <div class="section-header">
+                    <h2>About HeartStor ChMS</h2>
+                    <p class="lead">Built for churches. Designed for ministry. Completely free forever.</p>
+                </div>
+                <div class="about-content">
+                    <p>Our vision is to empower churches around the world with high-quality administrative tools,
+                        regardless of their size or budget. We believe that money shouldn't be a barrier to effective
+                        ministry and organized church management.</p>
+                    <p>HeartStor ChMS was created to relieve the administrative burden so church leaders can focus on
+                        what truly matters: people and purpose.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions or suggestions? We'd love to hear from you.</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-form-wrapper">
+                        <form action="https://formsubmit.co/heartstor4free@gmail.com" method="POST" class="contact-form"
+                            id="contact-form">
+                            <!-- Security: Honeypot field to trap spam bots -->
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_subject" value="New Website Submission: HeartStor ChMS">
+                            <!-- Better formatted email box template -->
+                            <input type="hidden" name="_template" value="box">
+
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required class="form-control"
+                                    placeholder="Your Name" minlength="2" maxlength="100">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required class="form-control"
+                                    placeholder="your.email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required class="form-control" rows="8"
+                                    placeholder="How can we help you?" minlength="10" maxlength="2000"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">HeartStor ChMS</a>
+                <p>Completely Free Church Management Software</p>
+            </div>
+            <div class="footer-links">
+                <nav aria-label="Footer Navigation">
+                    <a href="#why-heartstor">Why Us</a>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#support">Support</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year">2026</span> HeartStor ChMS. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
 </html>
