@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://heartstor4free.github.io/</loc>
+  <lastmod>2026-03-14T17:19:45+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://heartstor4free.github.io/HS_Doc.pdf</loc>
+  <lastmod>2026-03-14T17:19:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://heartstor4free.github.io/HS_Install.pdf</loc>
+  <lastmod>2026-03-14T17:19:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://heartstor4free.github.io/HS_SysReq.pdf</loc>
+  <lastmod>2026-03-14T17:19:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://heartstor4free.github.io/HS_Update.pdf</loc>
+  <lastmod>2026-03-14T17:19:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://heartstor4free.github.io/HS64_Setup.exe</loc>
+  <lastmod>2026-03-14T17:19:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://heartstor4free.github.io/HS32_Setup.exe</loc>
+  <lastmod>2026-03-14T17:19:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+</urlset>
