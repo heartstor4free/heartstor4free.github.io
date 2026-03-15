@@ -523,6 +523,21 @@ img {
     font-weight: bold;
 }
 
+/* Install page safety section tweaks */
+#safety .feature-card {
+    text-align: center;
+}
+
+#safety .code-block {
+    display: inline-block;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+#safety .checksum-row {
+    margin-bottom: 1rem;
+}
+
 /* Pricing Section */
 .pricing-container {
     max-width: 600px;

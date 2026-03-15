@@ -64,13 +64,84 @@ document.addEventListener('DOMContentLoaded', () => {
         loadVersion();
     }
 
-    // 2. Dynamic Year for Copyright Footer
+    // 2. Load checksums for advanced users (install page)
+    const checksum64El = document.getElementById('checksum-64');
+    const checksum32El = document.getElementById('checksum-32');
+    const checksumErrorEl = document.getElementById('checksum-error');
+
+    if (checksum64El && checksum32El) {
+        const loadChecksums = () => {
+            const isFileProtocol = window.location.protocol === 'file:';
+
+            const applyChecksums = (text) => {
+                const lines = text.split(/\r?\n/);
+                let found64 = false;
+                let found32 = false;
+
+                lines.forEach(line => {
+                    const trimmed = line.trim();
+                    if (!trimmed || trimmed.startsWith('#')) return;
+
+                    const [key, value] = trimmed.split('=');
+                    if (!key || !value) return;
+
+                    const k = key.trim().toLowerCase();
+                    const v = value.trim();
+
+                    if (k === '64-bit') {
+                        checksum64El.textContent = v;
+                        found64 = true;
+                    } else if (k === '32-bit') {
+                        checksum32El.textContent = v;
+                        found32 = true;
+                    }
+                });
+
+                if ((!found64 || !found32) && checksumErrorEl) {
+                    checksumErrorEl.style.display = 'block';
+                }
+            };
+
+            if (isFileProtocol) {
+                try {
+                    const xhr = new XMLHttpRequest();
+                    xhr.open('GET', 'hs_checksums.txt', false);
+                    xhr.send(null);
+                    if (xhr.status === 0 || xhr.status === 200) {
+                        applyChecksums(xhr.responseText);
+                    } else {
+                        throw new Error(`HTTP ${xhr.status}: ${xhr.statusText}`);
+                    }
+                } catch (error) {
+                    console.error('Error loading checksums (file://):', error);
+                    if (checksumErrorEl) checksumErrorEl.style.display = 'block';
+                }
+            } else {
+                fetch('hs_checksums.txt')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        return response.text();
+                    })
+                    .then(applyChecksums)
+                    .catch(error => {
+                        console.error('Error loading checksums:', error);
+                        if (checksumErrorEl) checksumErrorEl.style.display = 'block';
+                    });
+            }
+        };
+
+        loadChecksums();
+    }
+
+    // 3. Dynamic Year for Copyright Footer
     const yearSpan = document.getElementById('year');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
 
-    // 3. Mobile Navigation Toggle
+    // 4. Mobile Navigation Toggle
     const mobileBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
     
@@ -91,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 4. Sticky Navbar highlighting and style changes on scroll
+    // 5. Sticky Navbar highlighting and style changes on scroll
     const navbar = document.getElementById('navbar');
     
     function handleScroll() {
@@ -108,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add scroll listener
     window.addEventListener('scroll', handleScroll);
 
-    // 5. Smooth Scrolling for anchor links (fallback/enchancement for css scroll-behavior)
+    // 6. Smooth Scrolling for anchor links (fallback/enchancement for css scroll-behavior)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
@@ -124,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 6. Scroll Reveal Animation for Sections
+    // 7. Scroll Reveal Animation for Sections
     const revealElements = document.querySelectorAll('.reveal');
     
     function reveal() {
@@ -154,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 7. Hero image slideshow
+    // 8. Hero image slideshow
     const heroSlides = document.querySelectorAll('.hero-slide');
     if (heroSlides.length > 1) {
         let currentHeroSlide = 0;

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Download and installation guide for HeartStor ChMS, including safety information and how to bypass common browser and SmartScreen warnings.">
+    <title>HeartStor ChMS | Download &amp; Installation Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="HeartStor ChMS Home">
+                <img src="heartStor.png" alt="HeartStor ChMS Logo" class="logo-img">
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation" aria-expanded="false"
+                aria-controls="nav-links">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <nav id="nav-links" class="nav-links">
+                <a href="index.html#why-heartstor">Why Us</a>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#pricing">Pricing</a>
+                <a href="index.html#support">Support</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="#top" class="btn btn-primary btn-sm">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Download &amp; Installation Guide</h1>
+                    <p class="hero-subtitle">HeartStor ChMS for Windows</p>
+                    <p class="hero-description">
+                        Thank you for choosing HeartStor ChMS! This page walks you through a safe, step-by-step download
+                        and installation process, including how to handle common browser and Windows SmartScreen
+                        warnings.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#final-download" class="btn btn-primary">Skip to Final Download</a>
+                        <a href="#safety" class="btn btn-secondary">Read Safety Info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="safety" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Safety &amp; Transparency</h2>
+                    <p>We take your security seriously. Here is exactly what you need to know.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>Virus Free</h3>
+                        <p>
+                            The setup files for HeartStor ChMS are scanned before release and contain
+                            <strong>no malware, spyware, or adware</strong>. The installer only contains the files
+                            required to run HeartStor ChMS.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Checksum Verification (Advanced)</h3>
+                        <p>
+                            Advanced users can verify the integrity of the downloaded files using the SHA-256 hashes
+                            below. These values are loaded from the <code>hs_checksums.txt</code> file so they always
+                            match the latest release.
+                        </p>
+                        <div class="code-block">
+                            <div class="checksum-row">
+                                <p><strong>64-bit (HS64_Setup.exe)</strong></p>
+                                <code id="checksum-64">Loading checksum…</code>
+                            </div>
+                            <div class="checksum-row">
+                                <p><strong>32-bit (HS32_Setup.exe)</strong></p>
+                                <code id="checksum-32">Loading checksum…</code>
+                            </div>
+                            <p id="checksum-error" style="display:none;"><em>Unable to load checksums. Please try
+                                    refreshing the page.</em></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="what-to-expect" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What to Expect When Downloading</h2>
+                    <p>
+                        Because HeartStor ChMS is independent and not digitally signed by a large corporation, your
+                        computer may show one or more of the warnings below. These are common for new or community
+                        software.
+                    </p>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>1. Browser Warning (Chrome / Edge)</h3>
+                        <p>
+                            After the download completes, your browser might display a message such as
+                            <em>"This file is not commonly downloaded and may be dangerous."</em>
+                        </p>
+                        <p><strong>The fix:</strong></p>
+                        <p><strong>1.</strong> Look for the downloaded file at the bottom of the browser window or in the
+                            Downloads panel.</p>
+                        <p><strong>2.</strong> Click the arrow or three dots next to the file.</p>
+                        <p><strong>3.</strong> Select <strong>Keep</strong>. If prompted again, choose
+                            <strong>Keep anyway</strong>.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>2. Antivirus Flags</h3>
+                        <p>
+                            Some aggressive antivirus tools flag all newly downloaded <code>.exe</code> files as
+                            <em>"Low Reputation"</em>.
+                        </p>
+                        <p><strong>The fix:</strong></p>
+                        <p><strong>1.</strong> If your antivirus blocks the installer, open your antivirus notifications.</p>
+                        <p><strong>2.</strong> Look for the blocked HeartStor installer entry.</p>
+                        <p><strong>3.</strong> Choose the option to <strong>Allow</strong>, <strong>Restore</strong>, or
+                            <strong>Trust</strong> the file.</p>
+                        <p><strong>4.</strong> If needed, temporarily add the installer to your exclusions list while you
+                            install.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="smartscreen" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How to Bypass Windows SmartScreen</h2>
+                    <p>
+                        Windows SmartScreen helps block unknown apps. Because HeartStor ChMS is from an independent
+                        developer, it may show an extra confirmation screen the first time you run it.
+                    </p>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>Step-by-Step: Running the Installer</h3>
+                        <p><strong>1.</strong> Locate the downloaded file (for example, <strong>HS64_Setup.exe</strong> or
+                            <strong>HS32_Setup.exe</strong>) in your <strong>Downloads</strong> folder.</p>
+                        <p><strong>2.</strong> Double-click the file to run it.</p>
+                        <p><strong>3.</strong> If you see a blue window titled <strong>"Windows protected your PC"</strong>,
+                            look for a small link that says <strong>"More info"</strong>.</p>
+                        <p><strong>4.</strong> Click <strong>"More info"</strong>. This will reveal a button labeled
+                            <strong>"Run anyway"</strong>.</p>
+                        <p><strong>5.</strong> Click <strong>"Run anyway"</strong> to start the HeartStor installer.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Why You Are Seeing These Warnings</h3>
+                        <p>
+                            Microsoft and Google prioritize software from companies that purchase
+                            <strong>Code Signing Certificates</strong>, which require ongoing annual fees.
+                        </p>
+                        <p>
+                            As an independent developer providing HeartStor ChMS for free, it is not practical to pay
+                            for these certificates. Your computer therefore labels the app as coming from an
+                            <strong>"Unknown Publisher"</strong>, even though the file itself is safe.
+                        </p>
+                        <p>
+                            These warnings are about <em>reputation</em>, not about any known harm in the file.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="final-download" class="download section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ready to Install?</h2>
+                    <p>Choose the version that matches your Windows system and begin the installation.</p>
+                </div>
+                <div class="download-grid">
+                    <div class="download-card recommended">
+                        <div class="badge">Recommended</div>
+                        <div class="download-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </div>
+                        <h3>64-bit Version</h3>
+                        <p>For most modern Windows 10/11 computers.</p>
+                        <a href="HS64_Setup.exe" class="btn btn-primary btn-block">Final Download: 64-bit (.exe)</a>
+                        <p class="file-info">File name: HS64_Setup.exe</p>
+                    </div>
+
+                    <div class="download-card">
+                        <div class="download-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </div>
+                        <h3>32-bit Version</h3>
+                        <p>For older Windows computers that require 32-bit applications.</p>
+                        <a href="HS32_Setup.exe" class="btn btn-secondary btn-block">Final Download: 32-bit (.exe)</a>
+                        <p class="file-info">File name: HS32_Setup.exe</p>
+                    </div>
+                </div>
+                <div class="system-requirements text-center">
+                    <p>
+                        Not sure which one to choose? Open <strong>Settings &gt; System &gt; About</strong> in Windows
+                        and check your <strong>System type</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo footer-logo">HeartStor ChMS</a>
+                <p>Completely Free Church Management Software</p>
+            </div>
+            <div class="footer-links">
+                <nav aria-label="Footer Navigation">
+                    <a href="index.html#why-heartstor">Why Us</a>
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#pricing">Pricing</a>
+                    <a href="index.html#support">Support</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="install.html">Security</a>
+                </nav>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year">2026</span> HeartStor ChMS. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
